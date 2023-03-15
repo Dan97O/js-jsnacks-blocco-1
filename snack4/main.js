@@ -8,19 +8,20 @@ const authorization = ['paolo', 'daniel', 'marco', 'matteo' ];
 
 const invited = prompt('come ti chiami?');
 
+let permit = false
+
 let userName = "";
 
 
 for (let i = 0; i < authorization.length; i++) {
-  authorization[i] === userName ? invited = true : false;
+  authorization[i] === userName ? permit = true : false;
 }
-
 alert(`Ciao ${userName}. ${invited ? "Sei nella lista" : "Non sei nella lista"}`);
 
 
 let j = 0
 while(i < authorization.length){
-  authorization[j] === userName ? invited = true : false;
+  authorization[j] === userName ? permit = true : false;
   j++
 }
 alert(`Ciao ${userName}. ${invited ? "Sei nella lista" : "Non sei nella lista"}`);
