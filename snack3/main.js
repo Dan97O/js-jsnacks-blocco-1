@@ -3,9 +3,10 @@ Il programma stampa la somma di tutti i numeri inseriti. */
 
 
 /* 
+let sum = 0;
 for (let i = 0; i <= 10; i++) {
-    const numerUser = Number(prompt('inserisci un numero'));
-    const somma = numerUser + i
+    const numb = Number(prompt('inserisci un numero'));
+    const somma += numb
     console.log(somma); 
   } */
   
